@@ -298,7 +298,40 @@ footer.main-footer a {
 	padding: 0 6px;
 }
 
- 
+.comment-body {
+	border: 1px solid #333;
+	color: #fff;
+	padding: 10px;
+	overflow: auto;
+}
+
+.comment-meta img {
+	float: left;
+	margin-right: 10px;
+}
+
+.comment-meta time {
+	margin-left: 12px;
+}
+
+.comment-reply-link {
+	background: #009acd;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 15px;
+} 
+
+
+.comment-form input, .comment-form textarea {
+	width: 100%;
+	padding: 3px;
+	border: 1px solid #333;
+	margin-bottom: 20px;
+}
+
+.comment-form input {
+	height: 30px;
+}
 
 
 

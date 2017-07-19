@@ -15,6 +15,8 @@
 				<?php echo wpautop('Sorry, no posts were found'); ?>
 			<?php endif; ?>	 
 
+			<?php comments_template(); ?>
+
 		</div> <!-- main -->
 
 			<div class="side">
