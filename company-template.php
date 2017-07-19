@@ -1,3 +1,17 @@
+<?php
+/*
+|--------------------------------------------------------------------------
+| Template Name: Company Layout
+|--------------------------------------------------------------------------
+|
+|  
+|  
+|  
+|
+*/
+
+
+?>
 <?php get_header(); ?>
 
 	<div class="container content">
@@ -6,7 +20,11 @@
 			 <?php if(have_posts()) : ?>
 			 	<?php while(have_posts()) : the_post(); ?>
 
-			 		<?php get_template_part('content', get_post_format()); ?>
+			 		 <article class="page">
+			 		 	<h2><?php the_title(); ?></h2>
+			 		 	<p class="phone">Call Us: 1-800-5555-222</p>
+			 		 	<?php the_content(); ?>
+			 		 </article>
 
 
 				<?php endwhile; ?>
@@ -22,7 +40,7 @@
 
 		</div> <!-- main -->
 
-		<div class="side">
+			<div class="side">
 			 <?php if(is_active_sidebar('sidebar')) : ?>
 			 	<?php dynamic_sidebar('sidebar'); ?>
 			 <?php endif; ?>
